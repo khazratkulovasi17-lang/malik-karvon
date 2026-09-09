@@ -416,6 +416,7 @@ footer{
 }
 
 @keyframes contactOpen{
+
     from{
         opacity:0;
         transform:scale(.92) translateY(20px);
@@ -425,6 +426,7 @@ footer{
         opacity:1;
         transform:scale(1) translateY(0);
     }
+
 }
 
 .close-btn{
@@ -545,7 +547,6 @@ footer{
 .contact-item-icon svg{
     width:22px;
     height:22px;
-
     display:block;
 }
 
@@ -572,9 +573,7 @@ footer{
     font-size:20px;
 }
 
-/* =========================
-   TELEFON
-========================= */
+/* MOBILE */
 
 @media(max-width:700px){
 
@@ -582,8 +581,6 @@ footer{
         width:90%;
         padding:22px 0 20px;
     }
-
-    /* LOGO */
 
     .logo{
         margin-bottom:28px;
@@ -593,8 +590,6 @@ footer{
         width:115px;
         max-width:55%;
     }
-
-    /* LANGUAGE */
 
     .language{
         top:18px;
@@ -616,8 +611,6 @@ footer{
         padding:8px 10px;
         font-size:10px;
     }
-
-    /* MAIN */
 
     .small-title{
         font-size:8px;
@@ -642,8 +635,6 @@ footer{
         letter-spacing:2px;
     }
 
-    /* OPENING */
-
     .grand-opening{
         font-size:14px;
         letter-spacing:2px;
@@ -659,8 +650,6 @@ footer{
         width:23px;
         height:1px;
     }
-
-    /* COUNTDOWN */
 
     .countdown{
         grid-template-columns:repeat(2,1fr);
@@ -685,8 +674,6 @@ footer{
         letter-spacing:1px;
     }
 
-    /* DATE */
-
     .event-date{
         margin-top:15px;
         font-size:10px;
@@ -697,8 +684,6 @@ footer{
         font-size:8px;
         letter-spacing:2px;
     }
-
-    /* CARDS */
 
     .cards{
         grid-template-columns:1fr;
@@ -742,8 +727,6 @@ footer{
         font-size:17px;
     }
 
-    /* FOOTER */
-
     footer{
         margin-top:25px;
         padding:15px 8px;
@@ -752,8 +735,6 @@ footer{
     .footer-info{
         font-size:9px;
     }
-
-    /* MODAL */
 
     .contact-modal{
         padding:10px;
@@ -821,6 +802,7 @@ footer{
 
         font-size:19px;
     }
+
 }
 
 </style>
@@ -855,6 +837,7 @@ footer{
 </button>
 
 </div>
+
 </div>
 
 <!-- LOGO -->
@@ -888,23 +871,51 @@ GRAND OPENING
 <div class="countdown">
 
 <div class="time-box">
-<div class="number" id="days">00</div>
-<div class="label" id="daysLabel">KUN</div>
+
+<div class="number" id="days">
+00
+</div>
+
+<div class="label" id="daysLabel">
+KUN
+</div>
+
 </div>
 
 <div class="time-box">
-<div class="number" id="hours">00</div>
-<div class="label" id="hoursLabel">SOAT</div>
+
+<div class="number" id="hours">
+00
+</div>
+
+<div class="label" id="hoursLabel">
+SOAT
+</div>
+
 </div>
 
 <div class="time-box">
-<div class="number" id="minutes">00</div>
-<div class="label" id="minutesLabel">DAQIQA</div>
+
+<div class="number" id="minutes">
+00
+</div>
+
+<div class="label" id="minutesLabel">
+DAQIQA
+</div>
+
 </div>
 
 <div class="time-box">
-<div class="number" id="seconds">00</div>
-<div class="label" id="secondsLabel">SONIYA</div>
+
+<div class="number" id="seconds">
+00
+</div>
+
+<div class="label" id="secondsLabel">
+SONIYA
+</div>
+
 </div>
 
 </div>
@@ -913,9 +924,15 @@ GRAND OPENING
 
 <div class="event-date">
 
-📅 <span id="eventDate">3 OKTABR 2026</span>
+📅
+
+<span id="eventDate">
+3 OKTABR 2026
+</span>
+
 &nbsp; | &nbsp;
-🕖 10:00
+
+🕖 19:00
 
 </div>
 
@@ -936,9 +953,13 @@ target="_blank"
 rel="noopener noreferrer"
 >
 
-<div class="card-icon">📍</div>
+<div class="card-icon">
+📍
+</div>
 
-<div class="arrow">→</div>
+<div class="arrow">
+→
+</div>
 
 <h3 id="addressTitle">
 PARK MANZILI!
@@ -957,9 +978,13 @@ class="card"
 onclick="openContact()"
 >
 
-<div class="card-icon">☎</div>
+<div class="card-icon">
+☎
+</div>
 
-<div class="arrow">→</div>
+<div class="arrow">
+→
+</div>
 
 <h3 id="contactTitle">
 BIZ BILAN BOG‘LANISH
@@ -981,7 +1006,9 @@ Savollaringiz uchun biz bilan bog‘laning.
 
 <div class="footer-info">
 
-📍 <span id="footerCountry">
+📍
+
+<span id="footerCountry">
 O‘zbekiston, Navoiy
 </span>
 
@@ -997,7 +1024,10 @@ O‘zbekiston, Navoiy
 
 <!-- CONTACT MODAL -->
 
-<div class="contact-modal" id="contactModal">
+<div
+class="contact-modal"
+id="contactModal"
+>
 
 <div class="contact-box">
 
@@ -1010,7 +1040,10 @@ onclick="closeContact()"
 
 <div class="contact-logo">
 
-<img src="logo.svg" alt="Malik Karvon">
+<img
+src="logo.svg"
+alt="Malik Karvon"
+>
 
 </div>
 
@@ -1018,7 +1051,10 @@ onclick="closeContact()"
 BIZ BILAN BOG‘LANING
 </h2>
 
-<p class="contact-description" id="modalText">
+<p
+class="contact-description"
+id="modalText"
+>
 Biz bilan bog‘lanish uchun qulay usulni tanlang.
 </p>
 
@@ -1188,6 +1224,7 @@ Telefon
 </a>
 
 </div>
+
 </div>
 
 <script>
@@ -1204,7 +1241,7 @@ days:"KUN",
 hours:"SOAT",
 minutes:"DAQIQA",
 seconds:"SONIYA",
-date:"26 SENTABR 2026",
+date:"3 OKTABR 2026",
 invite:"BARCHAMIZ BIRGA SANAYMIZ!",
 addressTitle:"PARK MANZILI!",
 addressText:"Navoiy viloyati, Karmana tumani, Sardoba MFY",
@@ -1227,7 +1264,7 @@ days:"ДНЕЙ",
 hours:"ЧАСОВ",
 minutes:"МИНУТ",
 seconds:"СЕКУНД",
-date:"26 СЕНТЯБРЯ 2026",
+date:"3 ОКТЯБРЯ 2026",
 invite:"СЧИТАЕМ ВМЕСТЕ!",
 addressTitle:"АДРЕС ПАРКА!",
 addressText:"Навоийская область, Карманинский район, Сардоба МФЙ",
@@ -1250,7 +1287,7 @@ days:"DAYS",
 hours:"HOURS",
 minutes:"MINUTES",
 seconds:"SECONDS",
-date:"26 SEPTEMBER 2026",
+date:"3 OCTOBER 2026",
 invite:"LET'S COUNT DOWN TOGETHER!",
 addressTitle:"PARK LOCATION!",
 addressText:"Navoi Region, Karmana District, Sardoba MFY",
@@ -1274,52 +1311,89 @@ function changeLanguage(lang){
 const t=translations[lang];
 
 document.getElementById("slogan").textContent=t.slogan;
-document.getElementById("parkDescription").textContent=t.parkDescription;
-document.getElementById("grandOpening").textContent=t.grandOpening;
+
+document.getElementById("parkDescription").textContent=
+t.parkDescription;
+
+document.getElementById("grandOpening").textContent=
+t.grandOpening;
 
 document.getElementById("daysLabel").textContent=t.days;
+
 document.getElementById("hoursLabel").textContent=t.hours;
+
 document.getElementById("minutesLabel").textContent=t.minutes;
+
 document.getElementById("secondsLabel").textContent=t.seconds;
 
 document.getElementById("eventDate").textContent=t.date;
+
 document.getElementById("invite").textContent=t.invite;
 
-document.getElementById("addressTitle").textContent=t.addressTitle;
-document.getElementById("addressText").textContent=t.addressText;
+document.getElementById("addressTitle").textContent=
+t.addressTitle;
 
-document.getElementById("contactTitle").textContent=t.contactTitle;
-document.getElementById("contactText").textContent=t.contactText;
+document.getElementById("addressText").textContent=
+t.addressText;
 
-document.getElementById("footerCountry").textContent=t.footerCountry;
+document.getElementById("contactTitle").textContent=
+t.contactTitle;
 
-document.getElementById("modalTitle").textContent=t.modalTitle;
-document.getElementById("modalText").textContent=t.modalText;
+document.getElementById("contactText").textContent=
+t.contactText;
 
-document.getElementById("instagramTitle").textContent=t.instagram;
-document.getElementById("telegramTitle").textContent=t.telegram;
-document.getElementById("phoneTitle").textContent=t.phone;
+document.getElementById("footerCountry").textContent=
+t.footerCountry;
+
+document.getElementById("modalTitle").textContent=
+t.modalTitle;
+
+document.getElementById("modalText").textContent=
+t.modalText;
+
+document.getElementById("instagramTitle").textContent=
+t.instagram;
+
+document.getElementById("telegramTitle").textContent=
+t.telegram;
+
+document.getElementById("phoneTitle").textContent=
+t.phone;
 
 document.getElementById("languageBtn").textContent=
-lang==="uz" ? "🌐 UZ ▾" :
-lang==="ru" ? "🌐 RU ▾" :
-"🌐 EN ▾";
+lang==="uz"
+?"🌐 UZ ▾"
+:lang==="ru"
+?"🌐 RU ▾"
+:"🌐 EN ▾";
 
-localStorage.setItem("selectedLanguage",lang);
+localStorage.setItem(
+"selectedLanguage",
+lang
+);
 
 document.documentElement.lang=lang;
 
-document.getElementById("languageMenu").style.display="none";
+document.getElementById(
+"languageMenu"
+).style.display="none";
 
 }
 
 /* LANGUAGE MENU */
 
-document.getElementById("languageBtn").addEventListener("click",function(e){
+document.getElementById(
+"languageBtn"
+).addEventListener(
+"click",
+function(e){
 
 e.stopPropagation();
 
-const menu=document.getElementById("languageMenu");
+const menu=
+document.getElementById(
+"languageMenu"
+);
 
 menu.style.display=
 menu.style.display==="block"
@@ -1328,11 +1402,19 @@ menu.style.display==="block"
 
 });
 
-document.addEventListener("click",function(e){
+document.addEventListener(
+"click",
+function(e){
 
-if(!document.querySelector(".language").contains(e.target)){
+if(
+!document
+.querySelector(".language")
+.contains(e.target)
+){
 
-document.getElementById("languageMenu").style.display="none";
+document.getElementById(
+"languageMenu"
+).style.display="none";
 
 }
 
@@ -1342,7 +1424,9 @@ document.getElementById("languageMenu").style.display="none";
 
 function openContact(){
 
-document.getElementById("contactModal").classList.add("active");
+document.getElementById(
+"contactModal"
+).classList.add("active");
 
 document.body.style.overflow="hidden";
 
@@ -1350,13 +1434,19 @@ document.body.style.overflow="hidden";
 
 function closeContact(){
 
-document.getElementById("contactModal").classList.remove("active");
+document.getElementById(
+"contactModal"
+).classList.remove("active");
 
 document.body.style.overflow="";
 
 }
 
-document.getElementById("contactModal").addEventListener("click",function(e){
+document.getElementById(
+"contactModal"
+).addEventListener(
+"click",
+function(e){
 
 if(e.target===this){
 
@@ -1366,7 +1456,9 @@ closeContact();
 
 });
 
-document.addEventListener("keydown",function(e){
+document.addEventListener(
+"keydown",
+function(e){
 
 if(e.key==="Escape"){
 
@@ -1379,47 +1471,72 @@ closeContact();
 /* COUNTDOWN */
 
 const targetDate=
-new Date("2026-10-3T19:00:00+05:00").getTime();
+new Date(
+"2026-10-03T19:00:00+05:00"
+).getTime();
 
 function updateCountdown(){
 
-const now=new Date().getTime();
+const now=
+new Date().getTime();
 
-const difference=targetDate-now;
+const difference=
+targetDate-now;
 
 if(difference<=0){
 
 document.getElementById("days").innerText="00";
+
 document.getElementById("hours").innerText="00";
+
 document.getElementById("minutes").innerText="00";
+
 document.getElementById("seconds").innerText="00";
 
 const lang=
-localStorage.getItem("selectedLanguage")||"uz";
+localStorage.getItem(
+"selectedLanguage"
+)||"uz";
 
-document.getElementById("grandOpening").innerText=
+document.getElementById(
+"grandOpening"
+).innerText=
 translations[lang].opened;
 
 return;
 
 }
 
-const days=Math.floor(
-difference/(1000*60*60*24)
+const days=
+Math.floor(
+difference/
+(1000*60*60*24)
 );
 
-const hours=Math.floor(
-(difference%(1000*60*60*24))/
+const hours=
+Math.floor(
+(
+difference%
+(1000*60*60*24)
+)/
 (1000*60*60)
 );
 
-const minutes=Math.floor(
-(difference%(1000*60*60))/
+const minutes=
+Math.floor(
+(
+difference%
+(1000*60*60)
+)/
 (1000*60)
 );
 
-const seconds=Math.floor(
-(difference%(1000*60))/1000
+const seconds=
+Math.floor(
+(
+difference%
+(1000*60)
+)/1000
 );
 
 document.getElementById("days").innerText=
@@ -1439,13 +1556,18 @@ String(seconds).padStart(2,"0");
 /* START */
 
 const savedLanguage=
-localStorage.getItem("selectedLanguage")||"uz";
+localStorage.getItem(
+"selectedLanguage"
+)||"uz";
 
 changeLanguage(savedLanguage);
 
 updateCountdown();
 
-setInterval(updateCountdown,1000);
+setInterval(
+updateCountdown,
+1000
+);
 
 </script>
 
